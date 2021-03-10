@@ -1,0 +1,18 @@
+<div>
+<button  mat-raised-button (click)="drawer.toggle()"><mat-icon>list</mat-icon></button>
+<mat-drawer-container class="example-container" >
+  <mat-drawer #drawer [mode]="over">
+    <mat-nav-list>
+      <button mat-list-item aria-label="Home">
+        <mat-icon [routerLink]="['/home']">home</mat-icon>
+      </button>
+      <button mat-list-item aria-label="Details">
+        <mat-icon>description</mat-icon>
+      </button>
+      </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+</div>

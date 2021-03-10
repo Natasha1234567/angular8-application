@@ -1,0 +1,14 @@
+<a [routerLink]="['/home']">Back</a>
+
+<mat-progress-spinner [color]="primary" [mode]="indeterminate" [value]=50 *ngIf="isLoading">
+</mat-progress-spinner>
+<div class="container">
+  <div>
+    <img src={{this.userDetails.profilePic}} alt="Profile Picture" class="profile" />
+  </div>
+  <div class ="details">
+    <div><span>Name : </span> <span class = "userDetails">{{this.userDetails.name}}</span></div>
+    <div><span>Followers : </span> <span class = "userDetails">{{this.userDetails.followers}}</span></div>
+    <div><span>Repos : </span> <span class = "userDetails">{{this.userDetails.repos}}</span></div>
+  </div>
+</div>

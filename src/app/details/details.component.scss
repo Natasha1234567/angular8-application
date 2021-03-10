@@ -1,0 +1,25 @@
+
+.profile{
+  height: 400px;
+  width: 400px;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.details{
+  margin-top: 30px;
+  width: 50%;
+}
+
+span{
+  font-weight:  500;
+  font-size: 50px;
+}
+
+.userDetails{
+  font-size: 40px;
+}
